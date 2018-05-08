@@ -457,6 +457,7 @@ if ( isset( $_POST['create_report'] ) && is_correct_files() && check_license( $_
 		$days_arr[$spec] = cross_array( $days_arr[$spec], $alpha_arr );
 	}
 
+
 	$counter     = 0;
 	$objPHPExcel = PHPExcel_IOFactory::load( "output/result.xlsx" );
 	$objPHPExcel->setActiveSheetIndex( 4 );
